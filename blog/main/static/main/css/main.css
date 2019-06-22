@@ -13,7 +13,44 @@ ul#menu {
   margin-bottom: 30px;
   text-align: right;
 }
+/* Button */
+.btn {
+  display: inline-block;
+  color: black;
+  font-size: 1em;
+  padding: 0.5em 1em;
+  text-decoration: none;
+  border: thin solid gray;
+  background: linear-gradient(#fff1f1, #badede);
+}
+.submit {
+  font-family: Arial;
+  display: inline-block;
+  color: black;
+  font-size: 0.5em;
+  padding: 0.5em 0.8em;
+  text-decoration: none;
+  border: thin solid gray;
+  background: linear-gradient(#f1fff1, #dfdfaa);
+}
 
 ul#menu li {
+  display: inline-block;
+}
+/* Messages */
+.success, .error {
+  padding: 1em 0 1em 3em;
+}
+
+.success {
+  background-color: #ddffdd;
+  border: thin solid green;
+}
+
+.error {
+  background-color: #fbd9d8;
+  border: thin solid red;
+}
+.inlineBlock {
   display: inline-block;
 }
