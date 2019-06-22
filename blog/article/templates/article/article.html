@@ -12,8 +12,9 @@
 <h2>歡迎來到我的部落格</h2> 
 <br>
 {% include 'main/message.html' %}
-<p><a class="btn" href="{% url 'article:articleCreate' %}">新增文章</a></p>
-<br>
+{% include 'article/searchForm.html' %}
+<p class="inlineBlock"><a class="btn" href="{% url 'article:articleCreate' %}">新增文章</a></p>
+<br><br><hr>
 {% for article, comments in articles.items %}
   <h3 class="inlineBlock"><a href="{% url 'article:articleRead' article.id %}">{{ article.title }}</a></h3>
   <form class="inlineBlock" method="post" action="{% url 'article:articleDelete' article.id %}">
